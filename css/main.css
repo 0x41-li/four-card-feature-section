@@ -1,0 +1,165 @@
+*,
+*::after,
+*::before,
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  background-color: #fafafa;
+  line-height: 100%;
+}
+
+main {
+  padding: 0px 30px;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.color-primary {
+  color: #4c4e61;
+}
+
+.color-secondary {
+  color: #a3a5ae;
+}
+
+.text-center {
+  text-align: center;
+}
+
+main {
+  max-width: 330px;
+  margin: auto;
+  margin-top: 60px;
+  padding: 40px 0px;
+}
+
+.h1 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.h1__span {
+  display: block;
+}
+
+.main-para {
+  line-height: 24px;
+}
+
+.boxes {
+  margin-top: 100px;
+  display: grid;
+  gap: 30px;
+}
+
+.boxes__box {
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0px 10px 20px rgba(128, 128, 128, 0.2);
+  border-radius: 10px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  display: flex;
+  flex-flow: column;
+}
+
+.boxes__box:nth-child(1) {
+  border-top: 5px solid #45d3d3;
+}
+
+.boxes__box:nth-child(2) {
+  border-top: 5px solid #ea5353;
+}
+
+.boxes__box:nth-child(3) {
+  border-top: 5px solid #fcaf4a;
+}
+
+.boxes__box:nth-child(4) {
+  border-top: 5px solid #549ef2;
+}
+
+.box__h2 {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.box__para {
+  line-height: 24px;
+}
+
+.box__img {
+  margin-top: 40px;
+  align-self: flex-end;
+}
+
+.attribution {
+  font-size: 11px;
+  padding: 10px 0px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    max-width: 80%;
+  }
+
+  .h1, .main-para {
+    max-width: 500px;
+    margin: 20px auto;
+  }
+
+  .boxes {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main {
+    width: 90%;
+    max-width: 1200px;
+  }
+
+  .h1 {
+    font-size: 30px;
+  }
+
+  .boxes {
+    margin-top: 60px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+  }
+
+  .boxes__box:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+
+  .boxes__box:nth-child(4) {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
